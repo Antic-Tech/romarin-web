@@ -2,7 +2,7 @@ export default (core: any) => ({
 	textColor: core.colorBlack,
 	textColorMuted: core.colorLightGray,
 	textColorTouchable: core.colorPrimary,
-	textFontFamily: 'Comic Sans MS',
+	textFontFamily: 'Circular Pro, Comic Sans MS',
 	textFontSizeXLarge: core.coreFontSizeXLarge,
 	textFontSizeLarge: core.coreFontSizeLarge,
 	textFontSizeMedium: core.coreFontSizeMedium,

@@ -3,13 +3,13 @@ import color from './color';
 export default {
 	...color,
 
-	coreBorderRadius: 10,
+	coreBorderRadius: 0,
 
-	coreFontSizeXLarge: 34,
-	coreFontSizeLarge: 28,
-	coreFontSizeMedium: 17,
-	coreFontSizeSmall: 13,
-	coreFontSizeXSmall: 11,
+	coreFontSizeXLarge: 28,
+	coreFontSizeLarge: 22,
+	coreFontSizeMedium: 18,
+	coreFontSizeSmall: 16,
+	coreFontSizeXSmall: 12,
 
 	corePaddingXLarge: 32,
 	corePaddingLarge: 24,

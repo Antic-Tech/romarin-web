@@ -13,6 +13,7 @@ export default class Page extends React.Component<Props> {
 	render() {
 		const StyledDiv = styled.div`
 		background-color: ${ThemeProvider.theme.pageBackgroundColor};
+		padding: ${ThemeProvider.theme.pagePadding}px;
 	`;
 
 		return (

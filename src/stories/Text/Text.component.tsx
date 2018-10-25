@@ -31,5 +31,3 @@ class RomarinText extends React.Component<Props> {
 }
 
 export default RomarinText;
-
-RomarinText.Sizes.large;

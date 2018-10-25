@@ -2,6 +2,7 @@ import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 import ThemeProvider from '../../theme';
 import Text from '../Text/Text.component';
+import Button from '../Button/Button.component';
 
 import Page from '../Page/Page.component';
 
@@ -49,17 +50,16 @@ const weightUp = {
 };
 
 storiesOf('Theme', module)
-	.addDecorator((getStory) => <Page>{getStory()}</Page>)
 	.add('Update theme', () => <ButtonConatiner />);
 
 class ButtonConatiner extends React.Component {
-	constructor(props) {
+	constructor(props: any) {
 		super(props);
 		this.updateTheme = this.updateTheme.bind(this);
 		this.resetTheme = this.resetTheme.bind(this);
 	}
 
-	updateTheme(theme) {
+	updateTheme(theme: any) {
 		ThemeProvider.setTheme(theme);
 		this.forceUpdate();
 	}
@@ -71,19 +71,19 @@ class ButtonConatiner extends React.Component {
 
 	render() {
 		return (
-			<React.Fragment>
+			<Page>
 				<Text size={Text.Sizes.xlarge}>My Theme</Text>
 				<Text muted>Pick One!</Text>
-				<button onClick={() => this.resetTheme()} >Romarin</button>
+				<Button onClick={() => this.resetTheme()} >Romarin</Button>
 				<div style={{ height: 16 }} />
-				<button onClick={() => this.updateTheme(thinkShare)}>ThinkShare</button>
+				<Button onClick={() => this.updateTheme(thinkShare)}>ThinkShare</Button>
 				<div style={{ height: 16 }} />
-				<button onClick={() => this.updateTheme(firstAndFive)}>1st&5</button>
+				<Button onClick={() => this.updateTheme(firstAndFive)}>1st&5</Button>
 				<div style={{ height: 16 }} />
-				<button onClick={() => this.updateTheme(routineBuilder)}>Routine Builder</button>
+				<Button onClick={() => this.updateTheme(routineBuilder)}>Routine Builder</Button>
 				<div style={{ height: 16 }} />
-				<button onClick={() => this.updateTheme(weightUp)}>Weight Up</button>
-			</React.Fragment>
+				<Button onClick={() => this.updateTheme(weightUp)}>Weight Up</Button>
+			</Page>
 		);
 	}
 }
