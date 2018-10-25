@@ -11,11 +11,11 @@ storiesOf('Text', module)
 	))
 	.add('size prop', () => (
 		<React.Fragment>
-			<Text size="xlarge">size xlarge</Text>
-			<Text size="large">size large</Text>
-			<Text size="medium">size medium</Text>
-			<Text size="small">size small</Text>
-			<Text size="xsmall">size xsmall</Text>
+			<Text size={Text.Sizes.xlarge}>size xlarge</Text>
+			<Text size={Text.Sizes.large}>size large</Text>
+			<Text size={Text.Sizes.medium}>size medium</Text>
+			<Text size={Text.Sizes.small}>size small</Text>
+			<Text size={Text.Sizes.xsmall}>size xsmall</Text>
 		</React.Fragment>
 	))
 	.add('padding prop', () => (
