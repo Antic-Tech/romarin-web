@@ -1,10 +1,12 @@
 
 import textTheme from '../stories/Text/Text.theme';
+import pageTheme from '../stories/Page/Page.theme';
+
 import coreTheme from './core.theme.js';
 
 const getBaseTheme = (coreTheme) => ({
 	...coreTheme,
-
+	...pageTheme(coreTheme),
 	...textTheme(coreTheme),
 });
 

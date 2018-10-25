@@ -1,9 +1,10 @@
 import { storiesOf } from '@storybook/react';
 import * as React from 'react';
 import Text from './Text.component';
+import Page from '../Page/Page.component';
 
 storiesOf('Text', module)
-	.addDecorator((getStory) => <div >{getStory()}</div>)
+	.addDecorator((getStory) => <Page >{getStory()}</Page>)
 	.add('default', () => (
 		<React.Fragment>
 			<Text>default text</Text>
